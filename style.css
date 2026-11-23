@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f4f8;
+    color: #1d2433;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+/* Cabecera y pie  */
+header {
+    background: #1d2433;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #7f9bff;
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    margin-bottom: 15px;
+}
+
+/* Rejilla de tarjetas */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Tarjeta de licencia */
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    border-top: 5px solid #2342f5;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card .thumb {
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.card .category {
+    color: #777;
+    margin: 5px 0 10px 0;
+}
+
+.price {
+    font-size: 1.2em;
+}
+
+.price s {
+    color: #888;
+    font-size: 0.8em;
+}
+
+/* Etiquetas */
+.tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 0.8em;
+    margin-right: 5px;
+}
+
+.featured {
+    background: #d9f3ea;
+    color: #0e7a58;
+}
+
+.offer {
+    background: #fde3e1;
+    color: #d93a2f;
+}
+
+/* Botones */
+button {
+    background: #2342f5;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #C41000;
+}
+
+/* Filtros */
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.filters input[type="text"],
+.filters select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Ventanita de compra */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+}
+
+.modal code {
+    display: block;
+    background: #eee;
+    padding: 12px;
+    margin: 15px 0;
+    font-size: 1.3em;
+}

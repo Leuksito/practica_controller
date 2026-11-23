@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Licencias de software</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="app.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Licencias</h1>
+        <nav>
+            <a href="#featured-section">Destacadas</a>
+            <a href="#offers-section">Ofertas</a>
+            <a href="#latest-section">Novedades</a>
+            <a href="#catalog">Catálogo</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="featured-section">
+            <h2>Destacadas</h2>
+            <div id="featured" class="grid"></div>
+        </section>
+
+        <section id="offers-section">
+            <h2>Ofertas</h2>
+            <div id="offers" class="grid"></div>
+        </section>
+
+        <section id="latest-section">
+            <h2>Últimas versiones</h2>
+            <div id="latest" class="grid"></div>
+        </section>
+
+        <section id="catalog">
+            <h2>Catálogo completo</h2>
+            <div class="filters">
+                <input type="text" id="f-search" placeholder="Buscar programa...">
+                <select id="f-software">
+                    <option value="">Todos los programas</option>
+                </select>
+                <label><input type="checkbox" id="f-offers"> Solo ofertas</label>
+                <span id="count"></span>
+            </div>
+            <div id="all" class="grid"></div>
+        </section>
+    </main>
+
+</body>
+
+</html>
